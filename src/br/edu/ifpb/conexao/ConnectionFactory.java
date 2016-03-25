@@ -8,7 +8,7 @@ public class ConnectionFactory {
 	
 	public Connection getConnection(){
 		try {
-			return DriverManager.getConnection("jdbc:mysql://localhost:3306/fj21", "root", "15091998");
+			return DriverManager.getConnection("jdbc:mysql://localhost:3306/revisao", "root", "15091998");
 		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
