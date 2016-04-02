@@ -7,7 +7,7 @@
 <title>Atualizar</title>
 </head>
 <body>
-	<form action="ServletCadastar">
+	<form action="ServletCadasto">
 		Nome: <input type="text" value="nome"/><br>
 		Email: <input type="text" value="email"/><br>
 		Senha: <input type="password" value="senha"/><br>
