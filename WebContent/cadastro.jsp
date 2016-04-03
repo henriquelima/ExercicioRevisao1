@@ -7,11 +7,12 @@
 <title>Cadastro</title>
 </head>
 <body>
-	<form action="ServletCadastar">
-		Nome: <input type="text" value="nome"/><br>
-		Email: <input type="text" value="email"/><br>
-		Senha: <input type="password" value="senha"/><br>
+	<form method="post" action="ServletCadastro">
+		Nome: <input type="text" name="nome"/><br>
+		Email: <input type="text" name="email"/><br>
+		Senha: <input type="password" name="senha"/><br>
 		<input type="submit" value="Enviar"/>		
 	</form>
+	<a href="login.jsp"> Login</a>
 </body>
 </html>

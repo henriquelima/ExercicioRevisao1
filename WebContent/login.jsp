@@ -4,9 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Home</title>
+<title>Login</title>
 </head>
 <body>
+	<form method="post" action="ServletLogin">
+		Email:<input type="text" name="email"/><br>
+		Senha:<input type="password" name="senha"><br>
+		<input type="submit" value="Enviar">	
+	</form>
 	
+	<a href="cadastro.jsp">Deseja Cadastrar-se</a>
 </body>
 </html>

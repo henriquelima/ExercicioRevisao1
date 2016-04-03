@@ -56,10 +56,10 @@ public class UsuarioDAO {
 				usuario.setId(rs.getInt("id"));	
 				
 				usuarios.add(usuario);
-				
-				rs.close();
-				stmt.close();
+			
 			}
+			rs.close();
+			stmt.close();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();			
@@ -94,8 +94,7 @@ public class UsuarioDAO {
 			PreparedStatement stmt = con.prepareStatement(sql);
 			stmt.setString(1, email);
 			ResultSet rs = stmt.executeQuery();
-			
-						
+									
 			if(rs.next()){
 				usuario.setNome(rs.getString("nome"));
 				usuario.setEmail(rs.getString("email"));
