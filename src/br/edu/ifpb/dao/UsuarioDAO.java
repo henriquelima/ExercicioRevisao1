@@ -69,7 +69,7 @@ public class UsuarioDAO {
 	}
 	
 	public void atualiza(Usuario usuario){
-		String sql = "update usuarios set nome=?, email=?" +
+		String sql = "update usuarios set nome=?, email=?, senha=?" +
              " where id=?";
 		try {
 			PreparedStatement stmt = con.prepareStatement(sql);

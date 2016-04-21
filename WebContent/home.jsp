@@ -22,9 +22,11 @@
 			<td>${usuario.email}</td>
 			<td>${usuario.senha}</td>		
 		</tr>		 
-	</c:forEach>
-	
+	</c:forEach>	
 	</table>
+	<form method="post" action="atualizar.jsp">
+		<input type="submit" value="Atualizar"/>
+	</form>
 	
 </body>
 </html>
